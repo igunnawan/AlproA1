@@ -31,6 +31,7 @@ int main(){
             for(j=0;j<n;j++){
                 if((T[i] == T[j]) && (i != j)){
                     sum = sum + T[i];
+                    break;
                 }
             }
         }
