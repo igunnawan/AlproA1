@@ -1,0 +1,18 @@
+void JumPrima_Procedure(int jum, int x){
+    
+    int i,j;
+    int count;
+    jum = 0;
+    for(i=1;i<=x;i++){
+        count = 0;
+        for (j=1;j<=x;j++){
+            if(i%j == 0){
+                count += 1;
+            }
+        }
+        if(count == 2){
+            jum += i;
+        }
+    }
+    printf("%d",jum);
+}
